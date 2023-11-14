@@ -55,7 +55,7 @@ const CreateBlog = ({ user }) => {
     event.preventDefault();
 
     await axios
-      .post("https://the-world-de-espanol.onrender.com/blog/create-blog", blogForm)
+      .post("https://the-worldde-espanol.onrender.com/blog/create-blog", blogForm)
       .then((res) => {
         console.log("created", res.data.blog);
         navigate("/");
