@@ -26,7 +26,7 @@ const SignUp = ({setUser}) => {
 
   const handleSubmit = async (event) => {
     event.preventDefault()
-    await axios.post("https://the-world-de-espanol.onrender.com/user/create-user", userForm).then(res => {
+    await axios.post("https://the-worldde-espanol.onrender.com/user/create-user", userForm).then(res => {
       setUser(res.data.user);
       navigate("/profile")
     })
