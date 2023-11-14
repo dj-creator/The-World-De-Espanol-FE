@@ -15,7 +15,7 @@ const MyProfile = ({ user }) => {
     formData.append("_id", user._id)
     try {
       const response = await axios.post(
-        "https://the-world-de-espanol.onrender.com/user/updatePFP",
+        "https://the-worldde-espanol.onrender.com/user/updatePFP",
         formData, 
         {
           headers: {
